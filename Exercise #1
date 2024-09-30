@@ -1,0 +1,10 @@
+def calculate_power(base, exponent):
+    if exponent == 0:
+        return 1
+    else:
+        return base * calculate_power(base, exponent - 1)
+
+result = calculate_power(2, 7)
+print(result)
+
+#RESULT: 128
